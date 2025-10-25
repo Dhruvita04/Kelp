@@ -3,18 +3,17 @@ Quick start
 
 1. Copy '.env.example' to '.env' and edit values.
 2. Install dependencies:
+npm install
 
-3. npm install
 
+3. Make sure Postgres is reachable and 'DATABASE_URL' is set.
 
-4. Make sure Postgres is reachable and 'DATABASE_URL' is set.
-
-5. Run one-time processing (reads 'CSV_FILE_PATH'):
+4. Run one-time processing (reads 'CSV_FILE_PATH'):
 npm run process
 
 Or
 
-7. Start the server and trigger via HTTP POST /process:
+5. Start the server and trigger via HTTP POST /process:
 npm start
 then POST to http://localhost:3000/process
 
